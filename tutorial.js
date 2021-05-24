@@ -3,7 +3,7 @@ import './test.css'
 import * as THREE from 'three'
 
 // allows the user to interact with mouse
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 /* You will need the following 3
  * 1) Scene
@@ -60,7 +60,7 @@ const lightHelper = new THREE.PointLightHelper(pointLight)
 const gridHelper = new THREE.GridHelper(200, 50)
 scene.add(lightHelper, gridHelper)
 
-const controsl = new OrbitControls(camera, renderer.domElement)
+// const controsl = new OrbitControls(camera, renderer.domElement)
 
 function addStar() {
     const geometry = new THREE.SphereGeometry(0.25, 24, 24)
@@ -128,7 +128,7 @@ function animate() {
     torus.rotation.y += 0.005
     torus.rotation.z += 0.01
 
-    controsl.update()
+    // controsl.update()
 
     renderer.render(scene, camera)
 }

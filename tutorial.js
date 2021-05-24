@@ -60,7 +60,7 @@ const lightHelper = new THREE.PointLightHelper(pointLight)
 const gridHelper = new THREE.GridHelper(200, 50)
 scene.add(lightHelper, gridHelper)
 
-// const controsl = new OrbitControls(camera, renderer.domElement)
+// const controls = new OrbitControls(camera, renderer.domElement)
 
 function addStar() {
     const geometry = new THREE.SphereGeometry(0.25, 24, 24)
@@ -128,7 +128,7 @@ function animate() {
     torus.rotation.y += 0.005
     torus.rotation.z += 0.01
 
-    // controsl.update()
+    // controls.update()
 
     renderer.render(scene, camera)
 }
